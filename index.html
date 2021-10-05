@@ -5,10 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <meta name="description" content="Check list for your tasks">
+  <title>CheckList</title>
 </head>
 <body>
-  <h1>Hola</h1>
+  <h1>Check List</h1>
+  <section class="tasks-container">
+    <div id="taskContainer"></div>
+  </section>
+  <section class="task-error">
+    <p id="taskError"></p>
+  </section>
+  <label for="task">
+    Name of task: <input type="text" id="task" required>
+  </label>
+  <label for="taskDescription">
+    Task: <input type="text" id="taskDescription" required>
+  </label>
+  <button type="submit">Add task</button>
   <script src="./js/main.js"></script>
 </body>
 </html>
