@@ -9,6 +9,34 @@ body {
   background-color: rgb(231, 231, 231);
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 h1 {
   text-align: center;
+}
+
+.tasks-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.tasks-container > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.error {
+  background-color: red;
 }

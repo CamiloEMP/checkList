@@ -10,19 +10,36 @@
 </head>
 <body>
   <h1>Check List</h1>
-  <section class="tasks-container">
-    <div id="taskContainer"></div>
-  </section>
-  <section class="task-error">
-    <p id="taskError"></p>
-  </section>
-  <label for="task">
-    Name of task: <input type="text" id="task" required>
-  </label>
-  <label for="taskDescription">
-    Task: <input type="text" id="taskDescription" required>
-  </label>
-  <button type="submit">Add task</button>
+  <main>
+    <section class="tasks-container">
+      <div>
+        <span>Name of task</span>
+        <span>Content of task</span>
+        <div>
+          <ul id="title">
+            <li>xx</li>
+          </ul>
+        </div>
+        <div>
+          <ul id="content">
+            <li>xx</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="form-container">
+      <label for="task">
+        Name of task: <input type="text" id="task" required>
+      </label>
+      <label for="taskDescription">
+        Task: <input type="text" id="taskDescription" required>
+      </label>
+      <button type="submit">Add task</button>
+      <section class="task-error">
+        <p id="taskError"></p>
+      </section>
+    </section>
+  </main>
   <script src="./js/main.js"></script>
 </body>
 </html>
