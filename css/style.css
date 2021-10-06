@@ -8,45 +8,56 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+h1 {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 40px;
 }
 
-h1 {
-  text-align: center;
+input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  width: 60%;
+  font-size: 18px;
 }
 
 button {
-  border: 1px solid #000;
-  border-radius: 2px;
-  width: 80px;
-  padding: 8px;
-  background-color: rgb(26, 247, 63);
+  width: 140px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 15px;
+  font-size: 18px;
   font-weight: bold;
+  align-self: center;
+  border: 2px solid #ce5205;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #fff;
 }
 
 button:hover {
   cursor: pointer;
+  border: 3px solid rgb(255, 255, 255);
 }
 
 .tasks-container {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  padding-top: 15px;
-  text-align: center;
-  border: 1px solid #000;
-}
-
-.tasks-container > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 30px;
+  padding-right: 18px;
+  text-align: center;
+  font-size: 22px;
 }
 
 li {
   list-style: none;
+  padding: 10px;
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.521);
 }
 
 .error {
@@ -54,6 +65,24 @@ li {
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 250px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #e4722b;
+}
+
+.form-inputs-grid-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.form-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
 }

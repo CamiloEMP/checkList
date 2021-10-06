@@ -37,11 +37,28 @@ const app = () => {
     newContent.appendChild(content);
     listTitle.appendChild(newTask);
     listContent.appendChild(newContent);
+
+    nameTask.value = "";
+    contentTask.value = "";
   }
 
+  const comprobateInput = () => {
+    if (nameTask.value === "" ) {
+      nameTask.setAttribute("placeholder", "Name of Task");
+      nameTask.className = ""
+      return false;
+    }
+
+    if (contentTask.value === "") {
+      contentTask.setAttribute("placeholder", "Content of Task");
+      contentTask.className = ""
+      return false;
+    }
+  }
 
   document.querySelector('button').addEventListener( 'click', addTask);
-
+  document.querySelector('#task').addEventListener('click', comprobateInput);
+  document.querySelector('#taskDescription').addEventListener('click', comprobateInput);
 }
 
   // error.innerHTML = "";
