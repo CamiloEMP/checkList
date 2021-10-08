@@ -24,6 +24,7 @@ input {
   border-radius: 2px;
   width: 60%;
   font-size: 18px;
+  outline: none;
 }
 
 button {
@@ -54,14 +55,25 @@ button:hover {
 }
 
 li {
-  list-style: none;
-  padding: 10px;
-  margin-top: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+  display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.521);
+    align-items: center;
+    justify-content: center;
 }
 
-.error {
-  background-color: red;
+.titles-tasks {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.error::-webkit-input-placeholder {
+  color: red;
+  font-weight: bold;
 }
 
 .form-container {
@@ -85,4 +97,14 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: center;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+img:hover {
+  cursor: pointer;
 }

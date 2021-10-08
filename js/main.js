@@ -28,9 +28,8 @@ const app = () => {
     }
 
     // Se crea los elemenos
-
-    const newTask = document.createElement('li');
-    const newContent = document.createElement('li');
+    const newTask = document.createElement('li').className = "elm-input";
+    const newContent = document.createElement('li').className = "elm-input";
 
     // Se agrega el contenido al elemento y se agrega el elemento al padre
     newTask.appendChild(task);
@@ -42,6 +41,7 @@ const app = () => {
     contentTask.value = "";
   }
 
+  // Function for comprobate input !== ""
   const comprobateInput = () => {
     if (nameTask.value === "" ) {
       nameTask.setAttribute("placeholder", "Name of Task");
@@ -56,12 +56,20 @@ const app = () => {
     }
   }
 
-  document.querySelector('button').addEventListener( 'click', addTask);
+  // Function for delete task
+
+  const deleteTask = () => {
+    const items = document.querySelectorAll('li');
+    for (let i = 0; i <= nameTask.children.length - 1; i++) {
+      nameTask[i].
+    }
+
+  }
+
+  document.querySelector('#btn_add').addEventListener( 'click', addTask);
   document.querySelector('#task').addEventListener('click', comprobateInput);
   document.querySelector('#taskDescription').addEventListener('click', comprobateInput);
+  document.querySelector('#btn_delete').addEventListener('click', deleteTask);
 }
 
-  // error.innerHTML = "";
-  // document.getElementById('title').append(nameTask.value);
-  // document.getElementById('content').append(contentTask.value);
 app();
